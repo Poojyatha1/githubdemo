@@ -7,14 +7,12 @@ jobs:
         steps:
           - name: git checkout repo
             uses: actions/checkout@v4
-        steps:
-            - name: welcome message
-              run: echo "Hello"
+              
+          - name: welcome message
+            run: echo "Hello"
 
-            - name: list_files
-              run: ls
+          - name: list_files
+            run: ls
 
-            - name: read file
-              run: cat README.md
-
-#Few things will fail and we will check what is error, how to fix. 
+          - name: read file
+            run: cat README.md
